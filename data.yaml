@@ -1,13 +1,23 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
-
+names:
+- black_point
+- crack
+- damage
+- healthy
+- healthy-50-40
+- healthy-70-60
+- hole
+- insectdamage
+- molddamage
+- objects
+- shriveledseed
+- staindamage
 nc: 12
-names: ['black_point', 'crack', 'damage', 'healthy', 'healthy-50-40', 'healthy-70-60', 'hole', 'insectdamage', 'molddamage', 'objects', 'shriveledseed', 'staindamage']
-
 roboflow:
-  workspace: gouris-workspace-tkokh
-  project: gouris-workspace-tkokh
-  version: dataset
   license: Private
+  project: gouris-workspace-tkokh
   url: https://app.roboflow.com/gouris-workspace-tkokh/gouris-workspace-tkokh/dataset
+  version: dataset
+  workspace: gouris-workspace-tkokh
+test: /content/SeedVision/train/images
+train: /content/SeedVision/train/images
+val: /content/SeedVision/train/images
